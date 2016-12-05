@@ -1,0 +1,206 @@
+html, body {
+font-family: arial, sans-serif; 
+margin-top:0px;
+margin-left: 0px;
+height:100%;
+background-color: #ffe39f;
+
+}
+
+h1{margin-left:50px;
+margin-right:auto;
+font-family: 'Alfa Slab One', cursive;
+}
+
+.jumbotron{
+	padding-left:50px;
+	background-color: 	#eac086;
+
+}
+
+.container{margin-bottom:0px;
+width:90%;}
+ 
+  .thumbnail{height:400px;}
+.logo{
+	
+	 border-radius: 50%;
+	 /*border: 1px solid #ddd;*/
+	 padding: 1px;
+	 background-color:#ccc;
+	 box-shadow:2px 2px 5px #7eb2ba;
+	 margin-right:20px;
+}
+
+.msg{
+	background-color: #4c331c;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+}
+
+.btn-primary{background-color:#b27943;
+border-color: rgba(255, 255, 255, 0.3);}
+
+.btn-primary:hover{background-color: #756043;}
+
+.thumbnail h4 a{
+	color:#664526;
+	font-weight:bold;
+	text-transform: uppercase;}
+	
+#liste{
+	/* text-align:left; */
+	margin-right: auto;
+  margin-left: auto;
+  padding-left:50px;
+  width: 100%;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #332213;
+  border-color: #337ab7;
+}
+sr-only{background-color: #332213;}
+
+/* css footer */
+.footer-bottom {
+    background-color: #332213;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+	/* fin css footer */
+
+/* .navbar{margin-bottom:0px;
+background-color: #bb996b;
+}
+
+.nav ul a{
+	color:#fff;
+} */
+
+.navbar-default {
+  background-color:#b27943;
+  border-color: rgba(34, 34, 34, 0.05);
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  margin-bottom:0px;
+}
+.navbar-default .navbar-header .navbar-brand {
+  color: #28808c;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+  color: #eb3812;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  font-weight: 700;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+  color: #fff;
+  background-color:#756043;
+}
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+  color: #fff !important;
+  background-color: #756043;
+}
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+#login{
+	text-align : center;
+	background-color:#ffe39f;
+	margin : auto;
+	margin-bottom : 20px;
+	padding : 20px;
+	width : 35%;
+	box-shadow: 6px 6px 6px #eac086;
+	border-radius: 20px;
+	
+}
+
+
+
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color:#b27943;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar-default .navbar-header .navbar-brand:hover,
+  .navbar-default .navbar-header .navbar-brand:focus {
+    color: white;
+  }
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar-default .nav > li > a:hover,
+  .navbar-default .nav > li > a:focus:hover {
+    color: white;
+  }
+  .navbar-default.affix {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.05);
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    color: #28808c;
+    font-size: 14px;
+  }
+  .navbar-default.affix .navbar-header .navbar-brand:hover,
+  .navbar-default.affix .navbar-header .navbar-brand:focus {
+    color: #fff;
+  }
+  .navbar-default.affix .nav > li > a,
+  .navbar-default.affix .nav > li > a:focus {
+    color: #222222;
+  }
+  .navbar-default.affix .nav > li > a:hover,
+  .navbar-default.affix .nav > li > a:focus:hover {
+    color: #fff;
+  }
+}
