@@ -25,9 +25,10 @@ foreach ($donnees as $donnee)
                     <tr>
                         <td class="col-sm-8 col-md-6">
                         <div class="media">
-                            <a class="thumbnail1 pull-left" href="#"> <img class="media-object" src=="../img/catalogue/<?php echo $donnee['image']; ?>" style="width: 72px; height: 72px;"> </a>
+                            <a class="thumbnail1 pull-left" href="#"> <img class="media-object" src="img/catalogue/<?php echo $donnee['image']; ?>" style="width: 72px; height: 72px;"> </a>
                             <div class="media-body">
-                                <h4 class="media-heading"><a href="#"><?php echo $designation; ?></a></h4>
+                                <h4 class="media-heading"><a href="fiche_prod.php?code_prod=<?php echo $donnee['code_prod']; ?>">
+								<?php echo $designation; ?></a></h4>
                                 
                             </div>
                         </div></td>
@@ -37,9 +38,10 @@ foreach ($donnees as $donnee)
                         <td class="col-sm-1 col-md-1 text-center"><strong><?php echo $donnee['pu']; ?> €</strong></td>
                         <td class="col-sm-1 col-md-1 text-center"><strong><?php echo $total_prod; ?> €</strong></td>
                         <td class="col-sm-1 col-md-1">
-                        <button type="button" class="btn btn-danger">
+                        <a class="btn btn-danger" href="sup_prod_panier.php?code_prod=<?php echo $donnee['code_prod']; ?>" 
+						role="button" onclick="return confirm('Etes-vous sûr ?');">
                             <span class="fa fa-minus-square"></span> Retirer
-                        </button></td>
+                        </a></td>
                     </tr>
 	<?php } ?>					
                   
@@ -48,33 +50,33 @@ foreach ($donnees as $donnee)
                         <td>   </td>
                         <td>   </td>
                         <td><h5>Soustotal</h5></td>
-                        <td class="text-right"><h5><strong>$24.59</strong></h5></td>
+                        <td class="text-right"><h5><strong><?php echo $don['sstotal']; ?> €</strong></h5></td>
                     </tr>
                     <tr>
                         <td>   </td>
                         <td>   </td>
                         <td>   </td>
-                        <td><h5>TVA (19%)</h5></td>
-                        <td class="text-right"><h5><strong>$6.94</strong></h5></td>
+                        <td><h5>TVA (20%)</h5></td>
+                        <td class="text-right"><h5><strong><?php echo $tva; ?> €</strong></h5></td>
                     </tr>
                     <tr>
                         <td>   </td>
                         <td>   </td>
                         <td>   </td>
                         <td><h3>Total</h3></td>
-                        <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                        <td class="text-right"><h3><strong><?php echo $total; ?> €</strong></h3></td>
                     </tr>
                     <tr>
                         <td>   </td>
                         <td>   </td>
                         <td>   </td>
                         <td>
-                        <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-shopping-cart"></span> Continuer les courses
+                        <a class="btn btn-default" href="index.php" role="button">
+                            <span class="fa fa-lg fa-cart-plus"></span> Continuer les courses
                         </button></td>
                         <td>
                         <button type="button" class="btn btn-success">
-                            Finaliser la commande <span class="glyphicon glyphicon-play"></span>
+                            Finaliser la commande <span class="fa fa-play"></span>
                         </button></td>
                     </tr>
                 </tbody>

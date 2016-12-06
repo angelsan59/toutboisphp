@@ -8,9 +8,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="index.php">Accueil <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Commander</a></li>
+        <li><a href="index.php">Commander</a></li>
 		<li><a href="#">Commandes en cours</a></li>
-		<li><a href="#">Panier</a></li>
+		<li><a href="panier.php">Panier</a></li>
 		<?php
 		if (isset($_SESSION['id_user']) && isset($_SESSION['pass'])){
 		echo'	<li><a href="deconnection.php">Deconnexion</a></li>';
