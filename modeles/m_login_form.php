@@ -1,4 +1,10 @@
 <?php
+
+/*************************************/
+/* FONCTIONS DE CONNEXION PAR LOGIN  */
+/* - verif_utilisateur() :           */
+/*************************************/
+
  function verif_utilisateur(){
 	global $db;
 	if(isset ($_POST['id_user']) AND ($_POST['pass'])){

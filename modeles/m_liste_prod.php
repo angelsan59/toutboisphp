@@ -1,5 +1,14 @@
 ﻿<?php
 
+/*******************************************************************************/
+/* FONCTIONS AFFICHAGE PRODUITS		                                           */
+/* - get_prod() : affichage d'un produit                                       */
+/* - get_liste_prod() : liste des produits par ordre décroissant de code_prod  */
+/* - get_pag_prod($depart,$nombre) : liste de produits avec selection          */
+/* - afficharticle($depart,$nombre) : affichage des produits en 3 par 2        */
+/* - pagination() : calculs pour la pagination                                 */
+/*******************************************************************************/
+
 /* Afficher un produit */
 function get_prod($code_prod)
 {
