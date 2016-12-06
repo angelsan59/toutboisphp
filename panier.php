@@ -18,10 +18,18 @@ session_start(); // On démarre la session AVANT toute chose
 			$db = Connexion::getInstance();
 			
 			include_once('modeles/m_panier.php');
-			ajout_prod();
 			
+	if (isset ($_POST['code_prod']) AND isset ($_POST['qte']))
+	{
+	ajout_prod();}
+			
+			$stat2 = calcul_panier();
+			$don = $stat2->fetch();
+		$tva = $don['sstotal']*20/100;
+			$total= $don['sstotal']+$tva;
 			$stat = afficher_panier();
 			$donnees = $stat->fetchAll();
+		
 include_once('vues/v_panier.php');
 		?>
 		
