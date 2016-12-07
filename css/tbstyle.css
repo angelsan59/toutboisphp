@@ -12,6 +12,8 @@ margin-right:auto;
 font-family: 'Alfa Slab One', cursive;
 }
 
+h2{text-align:center;}
+
 .jumbotron{
 	padding-left:50px;
 	background-color: 	#eac086;
