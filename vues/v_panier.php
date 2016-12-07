@@ -6,7 +6,7 @@
                     <tr>
                         <th>Produit</th>
                         <th>Quantité</th>
-                        <th class="text-center">Prix</th>
+                        <th class="text-center">Prix unitaire</th>
                         <th class="text-center">Total</th>
                         <th> </th>
                     </tr>
@@ -17,7 +17,7 @@ foreach ($donnees as $donnee)
 	{
 		$donne['designation'] = utf8_encode($donnee['designation']);
 		$designation = htmlspecialchars($donne['designation']);
-		$total_prod=$donnee['pu']*$donnee['qte'];
+		$total_prod=($donnee['pu']*$donnee['qte'])-($donnee['pu']*$donnee['qte']*$donnee['remise']/100);
 				
 ?>
 
@@ -29,6 +29,9 @@ foreach ($donnees as $donnee)
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="fiche_prod.php?code_prod=<?php echo $donnee['code_prod']; ?>">
 								<?php echo $designation; ?></a></h4>
+								<p><?php 
+								
+								if (!$donnee['remise']==0) {echo $donnee['remise']. '% de remise';} ?> </p>
                                 
                             </div>
                         </div></td>

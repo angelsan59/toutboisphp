@@ -1,4 +1,6 @@
 <section>
+
+<h2>Il faut vous connecter avant de commander</h2>
 <form action="login.php" method="post">
 	<div id=login>
 			<label for="login">Login</label><br/>
