@@ -1,5 +1,12 @@
 ﻿<?php
 
+/*********************************************************/
+/* FONCTIONS DE GESTION DES PRODUITS                     */
+/* - ajout_prod() : Ajout d'un produit dans le catalogue */
+/* - mod_prod() : modification des détails d'un produit  */
+/* - sup_prod() : suppression d'un produit du catalogue  */
+/*********************************************************/
+
 /* Ajouter un produit par formulaire */
 function ajout_prod()
 {
