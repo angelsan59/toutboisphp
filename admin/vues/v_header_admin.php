@@ -1,4 +1,4 @@
- <div class="jumbotron" style="border:solid 1px;">
+ <div class="jumbotron">
 	<div class="container" style="border:solid 1px;">
 <div class="row">
   
